@@ -6,9 +6,9 @@ public final class Employee {
     private int id;
     private static int counter=1;
 
-    public Employee(String name, int department, int salary){
+    public Employee(String fullname, int department, int salary){
         this.id = counter++;
-        this.name = name;
+        this.name = fullname;
         this.department = department;
         this.salary = salary;
     }
@@ -38,6 +38,6 @@ public final class Employee {
     }
 
     public String toString(){
-        return "id:" + this.getId() + " name:"+ this.getName() + " department:" + this.getDepartment() + " salary:" + this.getSalary();
+        return "id:" + this.getId() + " fullname:"+ this.getName() + " department:" + this.getDepartment() + " salary:" + this.getSalary();
     }
 }
