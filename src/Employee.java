@@ -1,9 +1,10 @@
-public class Employee {
-    private String name;
+public final class Employee {
+    private final String name;
+
     private int department;
     private int salary;
     private int id;
-    static int counter=1;
+    private static int counter=1;
 
     public Employee(String name, int department, int salary){
         this.id = counter++;
