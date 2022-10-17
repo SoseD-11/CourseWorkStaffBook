@@ -47,7 +47,7 @@ public class Main {
     public static int getMinSalary() {
         int min = employees[0].getSalary();
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i].getSalary() < min && employees[i] != null) {
+            if (employees[i] != null && employees[i].getSalary() < min) {
                 min = employees[i].getSalary();
             }
         }
@@ -59,7 +59,7 @@ public class Main {
     public static int getMaxSalary() {
         int max = employees[0].getSalary();
         for (int i = 0; i < employees.length; i++) {
-            if (employees[i].getSalary() > max && employees[i] != null) {
+            if (employees[i] != null && employees[i].getSalary() > max) {
                 max = employees[i].getSalary();
             }
         }
