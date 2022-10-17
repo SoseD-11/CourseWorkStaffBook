@@ -43,7 +43,7 @@ public class Main {
         System.out.println("Cумма зп " + sum);
     }
 
-    /*поиск сотр с миним зп*/
+    /*поиск сотр с минимальным зп*/
     public static int getMinSalary() {
         int min = employees[0].getSalary();
         for (int i = 0; i < employees.length; i++) {
