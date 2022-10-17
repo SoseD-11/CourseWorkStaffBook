@@ -11,7 +11,7 @@ public class Main {
         employees[6] = new Employee("Nepravdivaya Margarita Simonian", 4, 33000);
         employees[7] = new Employee("Bezrukov Stanislav Valerievich", 1, 33000);
         employees[8] = new Employee("Lapochkina Mariya Evgenievna", 3, 25000);
-        employees[9] = new Employee("Agutin Leonid Fedorovich", 5, 30000);
+        employees[9] = null;//ew Employee("Agutin Leonid Fedorovich", 5, 30000);
 
 
 
@@ -29,7 +29,9 @@ public class Main {
     /*список со всеми сотрудниками со всеми данными в консоль toString()*/
     public static void printAllEmployeesInfo() {
         for (int i = 0; i < employees.length; i++){
+            if(employees[i] != null) {
                 System.out.println(employees[i].toString());
+            }
         }
     }
     /*сумма зп*/
@@ -84,8 +86,9 @@ public class Main {
     /*фио всех сотр в консоль*/
     public static void printEmployeesNames() {
         for (int i = 0; i < employees.length; i++){
+            if (employees[i] != null) {
                 System.out.println(employees[i].getName());
-
+            }
         }
     }
 }
