@@ -13,7 +13,7 @@ public class Main {
         employees[8] = new Employee("Lapochkina Mariya Evgenievna", 3, 25000);
         employees[9] = new Employee("Agutin Leonid Fedorovich", 5, 30000);
 
-        // создать метод для  for (int i = 0; i < employees.length; i++){
+
 
 
 
